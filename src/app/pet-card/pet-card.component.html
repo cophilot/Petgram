@@ -1,5 +1,10 @@
 <div class="card">
   <img src="{{ img }}" />
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png"
+    #heart
+    class="heart"
+  />
   <p>{{ text }}</p>
-  <button>Like</button><button>Comment</button>
+  <button (click)="like()">Like</button><button>Comment</button>
 </div>

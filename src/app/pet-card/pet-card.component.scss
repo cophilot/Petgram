@@ -34,4 +34,13 @@
             color: #e99469;
         }
     }
+
+    .heart{
+        position: absolute;
+        top: 360px;
+        left: 360px;
+        width: 40px;
+        height: 40px;
+        display: none;
+    }
 }

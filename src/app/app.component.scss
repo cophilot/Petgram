@@ -1,4 +1,38 @@
 .container{
+    margin-right:48px;
+}
+
+.flexrow{
+    display: flex;
+    justify-content: center;
     padding-left: 200px;
-    padding-top: 100px;
+    padding-right: 200px;
+    padding-top: 150px;
+    app-pet-card {
+            padding-bottom: 200px;
+        }
+}
+.profile-suggestions{
+    app-proposals{
+        margin: 100px;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+// rearrange the order of the elements if the screen is too small
+@media screen and (max-width: 600px) {
+    .flexrow{
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 0px;
+        padding-top: 50px;
+        app-pet-card {
+            padding-bottom: 200px;
+        }
+    }
 }

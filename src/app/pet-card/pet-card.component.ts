@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-pet-card',
@@ -8,4 +8,18 @@ import { Component, Input } from '@angular/core';
 export class PetCardComponent {
   @Input() text:String = "";
   @Input() img:String = "";
+  @ViewChild('heart')
+  heart!: ElementRef;
+
+   like() {
+     console.log(this.heart);
+    if(this.heart != null) {
+      this.heart.nativeElement.style.display = "block";
+    }
+
+    /* let heart = document.getElementById("heart");
+    if(heart != null) {
+      heart.style.display = "block";
+    } */
+  }
 }

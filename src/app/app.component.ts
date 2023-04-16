@@ -21,4 +21,16 @@ export class AppComponent {
       text: 'Mr. Kaninchen is here!🐰'
     },
   ];
+  proposals = [
+    {
+      img: 'assets/pets/3.jpg',
+      name: 'Mr. Kaninchen',
+      description: '2 Years old'
+    },
+    {
+      img: 'assets/pets/4.jpg',
+      name: 'Robby',
+      description: '23 Years old'
+    },
+  ];
 }

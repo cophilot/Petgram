@@ -1,8 +1,20 @@
-<app-header></app-header>
-<div class="container">
-  <app-pet-card
-    *ngFor="let i of posts"
-    [text]="i.text"
-    [img]="i.img"
-  ></app-pet-card>
+<div class="flexrow">
+  <div class="container">
+    <app-pet-card
+      *ngFor="let i of posts"
+      [text]="i.text"
+      [img]="i.img"
+    ></app-pet-card>
+  </div>
+  <div class="profile-suggestions">
+    <p><b>You might know</b></p>
+    <app-proposals
+      *ngFor="let j of proposals"
+      [description]="j.description"
+      [name]="j.name"
+      [img]="j.img"
+    ></app-proposals>
+  </div>
 </div>
+
+<app-header class="sticky"></app-header>
