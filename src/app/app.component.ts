@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-first-project';
+  title = 'Petgram';
+  posts = [
+    {
+      img: 'assets/pets/1.jpg',
+      text: 'Superslon activated!😎'
+    },
+    {
+      img: 'assets/pets/2.jpg',
+      text: 'Hello I am Ralph and I like food...'
+    },
+    {
+      img: 'assets/pets/3.jpg',
+      text: 'Mr. Kaninchen is here!🐰'
+    },
+  ];
 }
