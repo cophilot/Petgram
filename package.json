@@ -1,6 +1,6 @@
 {
-  "name": "my-first-project",
-  "version": "0.0.0",
+  "name": "petgram",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
