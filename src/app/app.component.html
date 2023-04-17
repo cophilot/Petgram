@@ -1,3 +1,8 @@
+<img
+  src="assets/img/logo_small.png"
+  class="backgroundImage"
+  alt="backgroundImage"
+/>
 <div class="flexrow">
   <div class="container">
     <app-pet-card
@@ -17,4 +22,11 @@
   </div>
 </div>
 
-<app-header class="sticky"></app-header>
+<app-header
+  class="sticky"
+  [ngStyle]="{ display: bigHeaderDisplay }"
+></app-header>
+<app-header-small
+  class="sticky"
+  [ngStyle]="{ display: smallHeaderDisplay }"
+></app-header-small>

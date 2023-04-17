@@ -23,6 +23,15 @@
     top: 0;
     width: 100%
 }
+.backgroundImage{
+    position: fixed;
+    right: -150px;
+    bottom: -150px;
+    width:60%;
+    transform: rotate(-20deg);
+    opacity: 0.1;
+    z-index: -100;
+}
 
 // rearrange the order of the elements if the screen is too small
 @media screen and (max-width: 600px) {
@@ -34,5 +43,14 @@
         app-pet-card {
             padding-bottom: 200px;
         }
+    }
+    .backgroundImage {
+        position: fixed;
+        right: -50px;
+        bottom: -50px;
+        width: 80%;
+        transform: rotate(-20deg);
+        opacity: 0.1;
+        z-index: -100;
     }
 }

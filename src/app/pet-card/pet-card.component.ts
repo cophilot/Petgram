@@ -6,20 +6,29 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
   styleUrls: ['./pet-card.component.scss']
 })
 export class PetCardComponent {
-  @Input() text:String = "";
-  @Input() img:String = "";
+  hugged:boolean = false;
+  hugButtonText:string = "Hug";
+
+  @Input() text:string = "";
+  @Input() img:string = "";
+
   @ViewChild('heart')
   heart!: ElementRef;
 
-   like() {
-     console.log(this.heart);
-    if(this.heart != null) {
-      this.heart.nativeElement.style.display = "block";
+  hug() {
+    if(this.heart == null) {
+      console.error("Something went wrong: heart is null")
+      return;
     }
+    if(this.hugged) {
+      this.heart.nativeElement.style.display = "none";
+      this.hugButtonText = "Hug";
+      
+    } else {
+      this.heart.nativeElement.style.display = "block";
+      this.hugButtonText = "Unhug";
+    }
+    this.hugged = !this.hugged;
 
-    /* let heart = document.getElementById("heart");
-    if(heart != null) {
-      heart.style.display = "block";
-    } */
   }
 }
