@@ -1,5 +1,12 @@
 .container{
     margin-right:48px;
+    margin-bottom:48px;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px 0;
+    app-pet-card {
+            border: 5px solid rgba(0, 0, 0, 0.001);
+        }
 }
 
 .flexrow{
@@ -8,9 +15,7 @@
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 150px;
-    app-pet-card {
-            padding-bottom: 200px;
-        }
+    
 }
 .profile-suggestions{
     app-proposals{
