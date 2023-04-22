@@ -1,7 +1,10 @@
 <div class="card">
-  <img src="{{ img }}" alt="img" />
-  <img src="assets/img/logo_small.png" #heart class="heart" alt="like" />
+  <img src="{{ img }}" alt="img" (dblclick)="hug()" />
+  <img src="assets/img/logo_small.png" #heart class="heart" alt="hug" />
+  <img src="assets/img/logo_small.png" #bigHeart class="bigHeart" alt="hug" />
   <p>{{ text }}</p>
-  <button (click)="hug()" #hugButton>{{ hugButtonText }}</button
-  ><button>Comment</button>
+  <button (click)="hug()" #hugButton class="interactButton">
+    {{ hugButtonText }}
+  </button>
+  <button class="interactButton">Comment</button>
 </div>

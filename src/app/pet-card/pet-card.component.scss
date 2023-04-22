@@ -15,7 +15,25 @@
         color:rgba(0,0,0,0.8);
         font-size: 20px;
     }
-    button{
+    
+
+    .heart{
+        position: absolute;
+        top: 340px;
+        left: 340px;
+        width: 40px;
+        height: 40px;
+        display: none;
+    }
+    .bigHeart{
+        position: absolute;
+        top: 75px;
+        left: 75px;
+        width: 250px;
+        height: 250px;
+        display: none;
+    }
+    .interactButton {
         margin-left: 50px;
         margin-right: 50px;
         margin-bottom: 15px;
@@ -28,22 +46,16 @@
         border-radius: 5px;
         align-items: center;
         cursor: pointer;
-        &:hover{
+    
+        &:hover {
             background-color: #ffb472;
             opacity: 0.8;
             color: #e99469;
         }
     }
-
-    .heart{
-        position: absolute;
-        top: 360px;
-        left: 360px;
-        width: 40px;
-        height: 40px;
-        display: none;
-    }
+    
 }
+
 @media screen and (max-width: 600px) {
     .card {
         button{

@@ -14,6 +14,10 @@ export class PetCardComponent {
 
   @ViewChild('heart')
   heart!: ElementRef;
+  @ViewChild('bigHeart')
+  bigHeart!: ElementRef;
+  
+
 
   hug() {
     if(this.heart == null) {
@@ -25,8 +29,12 @@ export class PetCardComponent {
       this.hugButtonText = "Hug";
       
     } else {
-      this.heart.nativeElement.style.display = "block";
+      this.bigHeart.nativeElement.style.display = "block";
       this.hugButtonText = "Unhug";
+      setTimeout(() => {
+        this.bigHeart.nativeElement.style.display = "none";
+        this.heart.nativeElement.style.display = "block";
+      }, 1000);
     }
     this.hugged = !this.hugged;
 

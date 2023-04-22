@@ -24,18 +24,27 @@ export class AppComponent {
       img: 'assets/pets/3.jpg',
       text: 'Mr. Kaninchen is here!🐰'
     },
+    {
+      img: 'assets/pets/5.jpg',
+      text: 'The best avocado in town!🥑'
+    },
   ]);
   
   proposals = shuffle([
     {
       img: 'assets/pets/3.jpg',
       name: 'Mr. Kaninchen',
-      description: '2 Years old'
+      description: 'Warning: I am a bad boy!😎'
     },
     {
       img: 'assets/pets/4.jpg',
       name: 'Robby',
-      description: '23 Years old'
+      description: '23 Years old and still single...'
+    },
+    {
+      img: 'assets/pets/6.jpg',
+      name: 'Zibi',
+      description: 'Am I black with white strips or white with black strips?'
     },
   ]);
 
