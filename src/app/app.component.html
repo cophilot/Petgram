@@ -8,8 +8,9 @@
     <app-pet-card
       *ngFor="let i of posts"
       [text]="i.text"
-      [img]="i.img"
+      [imgURL]="i.img"
     ></app-pet-card>
+    <button class="btn" (click)="loadMore()">Load more</button>
   </div>
   <div class="profile-suggestions">
     <p><b>You might know</b></p>

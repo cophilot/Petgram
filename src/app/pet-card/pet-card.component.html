@@ -1,5 +1,11 @@
-<div class="card">
-  <img src="{{ img }}" alt="img" (dblclick)="hug()" />
+<div class="card" #card>
+  <img
+    src="{{ imgURL }}"
+    alt="img"
+    #img
+    (dblclick)="hug()"
+    (load)="onImageLoad()"
+  />
   <img src="assets/img/logo_small.png" #heart class="heart" alt="hug" />
   <img src="assets/img/logo_small.png" #bigHeart class="bigHeart" alt="hug" />
   <p>{{ text }}</p>

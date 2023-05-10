@@ -1,5 +1,4 @@
 .card{
-    min-height:550px;
     background-color: white;
     width: 400px;
     border:1px solid rgba(0,0,0,0.3);
@@ -16,7 +15,6 @@
         font-size: 20px;
     }
     
-
     .heart{
         position: absolute;
         top: 340px;
@@ -27,8 +25,7 @@
     }
     .bigHeart{
         position: absolute;
-        top: 75px;
-        left: 75px;
+        top:0px;
         width: 250px;
         height: 250px;
         display: none;
