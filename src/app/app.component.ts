@@ -59,6 +59,13 @@ export class AppComponent {
     this.loadMore();
   }
 
+  darkMode() {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  lightMode() {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+
   @HostListener('window:scroll', ['$event'])
   OnScroll(event: any) {
     let value = window.scrollY;

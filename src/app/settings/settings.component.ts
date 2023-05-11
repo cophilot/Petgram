@@ -16,21 +16,22 @@ export class SettingsComponent {
   animalMode: string = '🐶';
 
   @Output() animalModeEmitter = new EventEmitter<string>();
-  @Output() colorSchemeEmitter = new EventEmitter<string>();
   @Output() displayEmitter = new EventEmitter<string>();
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef) {
+    this.setColorScheme();
+  }
 
   detectPrefersColorScheme(): string {
     // Detect if prefers-color-scheme is supported
     if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
       // Set colorScheme to Dark if prefers-color-scheme is dark. Otherwise, set it to Light.
       return window.matchMedia('(prefers-color-scheme: dark)').matches
-        ? 'Light Mode'
-        : 'Dark Mode';
+        ? '☀️'
+        : '🌙';
     } else {
       // If the browser does not support prefers-color-scheme, set the default to dark.
-      return 'Light Mode';
+      return '☀️';
     }
   }
 
@@ -39,17 +40,17 @@ export class SettingsComponent {
   }
 
   changeColorScheme(): void {
-    // If the color scheme is light, then change it to dark.
-    if (this.colorScheme === 'Light Mode') {
-      document.body.classList.add('dark-theme');
-      this.colorScheme = 'Dark Mode';
-    } else {
-      // Otherwise, change it back to light.
-      document.body.classList.remove('dark-theme');
-      this.colorScheme = 'Light Mode';
-    }
-    this.colorSchemeEmitter.emit(this.colorScheme);
+    this.colorScheme = this.colorScheme == '☀️' ? '🌙' : '☀️';
+    this.setColorScheme();
     this.close();
+  }
+
+  setColorScheme(): void {
+    if (this.colorScheme == '☀️') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
   }
 
   changeAnimalMode(): void {

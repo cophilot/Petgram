@@ -2,6 +2,7 @@
     display:flex;
     align-items: center;
     cursor: pointer;
+    color: var(--text-color);
     img{
         width:60px;
         height:60px;
@@ -10,18 +11,12 @@
         object-position: right;
     }
     .description{
-        color: rgba(0,0,0,0.5);
         font-size: 12px;
+        opacity: 0.5;
+        margin-left: 15px;
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .profile-row{
-        .description{
-            color: rgba(255,255,255,0.5);
-        }
-        .name{
-            color: white;
-        }
+    .name{
+        margin-left: 15px;
     }
+    
 }

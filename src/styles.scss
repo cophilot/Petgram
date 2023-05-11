@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     margin: 0;
-    background-color: #eaeaea;
+    background-color: var(--bg-color);
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+p{
+    color: var(--text-color)
+}
+
+/* @media (prefers-color-scheme: dark) {
 
     p {
         color: white;
@@ -14,4 +18,16 @@ body{
     body {
         background-color: #1a1a2b;
     }
+} */
+
+[data-theme="light"]{
+    --text-color:black;
+    --color:white;
+    --bg-color: #eaeaea;
+}
+
+[data-theme="dark"]{
+    --text-color: white;
+    --color: #09091a;
+    --bg-color: #1a1a2b;
 }

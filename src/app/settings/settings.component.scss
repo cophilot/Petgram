@@ -4,26 +4,18 @@
     right:0px;
     top:100px;
     button{
-        background-color: white;
+        background-color: var(--color);
         font-size: 20px;
         height:50px;
         width:100%;
         cursor: pointer;
         border-radius: 0%;
         border: none;
+        color: var(--text-color);
         &:hover {
             background-color: #ffb472;
             opacity: 0.8;
             color: #e99469;
-        }
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .settings {
-        button{
-            background-color: #09091a;
-            color: white;
         }
     }
 }

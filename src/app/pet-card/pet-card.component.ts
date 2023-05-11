@@ -46,9 +46,10 @@ export class PetCardComponent {
       this.bigHeart.nativeElement.style.display = 'block';
       this.hugButtonText = 'Unhug';
       setTimeout(() => {
-        this.bigHeart.nativeElement.style.display = 'none';
         this.heart.nativeElement.style.display = 'block';
-      }, 1000);
+        this.bigHeart.nativeElement.style.display = 'none';
+        this.bigHeart.nativeElement.style.opacity = '100%';
+      }, 2000);
     }
     this.hugged = !this.hugged;
   }
