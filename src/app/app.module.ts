@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { PetCardComponent } from './pet-card/pet-card.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { HeaderSmallComponent } from './header-small/header-small.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderSmallComponent } from './header-small/header-small.component';
     HeaderComponent,
     PetCardComponent,
     ProposalsComponent,
-    HeaderSmallComponent
+    HeaderSmallComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

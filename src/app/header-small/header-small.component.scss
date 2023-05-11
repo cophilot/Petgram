@@ -25,3 +25,9 @@ header {
         position: fixed;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #09091a;
+    }
+}

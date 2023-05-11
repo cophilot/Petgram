@@ -1,6 +1,7 @@
 .profile-row{
     display:flex;
     align-items: center;
+    cursor: pointer;
     img{
         width:60px;
         height:60px;
@@ -11,5 +12,16 @@
     .description{
         color: rgba(0,0,0,0.5);
         font-size: 12px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .profile-row{
+        .description{
+            color: rgba(255,255,255,0.5);
+        }
+        .name{
+            color: white;
+        }
     }
 }

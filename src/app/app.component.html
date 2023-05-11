@@ -3,6 +3,7 @@
   class="backgroundImage"
   alt="backgroundImage"
 />
+
 <div class="flexrow">
   <div class="container">
     <app-pet-card
@@ -13,7 +14,7 @@
     <button class="btn" (click)="loadMore()">Load more</button>
   </div>
   <div class="profile-suggestions">
-    <p><b>You might know</b></p>
+    <p><b>You might also know</b></p>
     <app-proposals
       *ngFor="let j of proposals"
       [description]="j.description"
@@ -26,8 +27,14 @@
 <app-header
   class="sticky"
   [ngStyle]="{ display: bigHeaderDisplay }"
+  (showSettingsEmitter)="toggleSettingsVisibility()"
 ></app-header>
 <app-header-small
   class="sticky"
   [ngStyle]="{ display: smallHeaderDisplay }"
 ></app-header-small>
+<app-settings
+  (animalModeEmitter)="setAnimalMode($event)"
+  (displayEmitter)="toggleSettingsVisibility()"
+  [style.display]="settingsVisible ? 'block' : 'none'"
+></app-settings>

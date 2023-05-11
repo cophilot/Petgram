@@ -6,10 +6,37 @@ header{
         cursor: pointer;
         background: none;
     }
+    .settingsButton {
+        right:30px;
+        position: fixed;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        top:30px;
+    }
 }
 .logo{
     height:60px;
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 50px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    header{
+        background-color: #09091a;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        .settingsButton {
+            right: 20px;
+            top: 30px;
+            height: 30px;
+            width: 30px;
+        }
+    }
 }
