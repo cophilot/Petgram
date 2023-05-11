@@ -1,0 +1,1 @@
+body{margin:0;background-color:var(--bg-color);font-family:Josefin Sans,sans-serif}p{color:var(--text-color)}[data-theme=light]{--text-color:black;--color:white;--bg-color: #eaeaea}[data-theme=dark]{--text-color: white;--color: #09091a;--bg-color: #1a1a2b}
