@@ -1,5 +1,11 @@
 <div class="settings" #settings>
   <button #changeAnimal (click)="changeAnimalMode()">{{ animalMode }}</button>
-  <button #changeMode (click)="changeColorScheme()">{{ colorScheme }}</button>
+  <button #changeMode (click)="changeColorScheme()">
+    <img
+      src="assets/img/{{ colorScheme }}.png"
+      alt="toggle color"
+      class="colorImage"
+    />
+  </button>
   <button (click)="close()">Close</button>
 </div>

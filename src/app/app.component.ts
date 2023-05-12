@@ -15,7 +15,7 @@ export class AppComponent {
 
   isCatMode: boolean = true;
 
-  oldScrollPosition: number = 0;
+  oldScrollPosition: number = -1;
 
   posts = shuffle([
     /*
@@ -71,13 +71,17 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event'])
   OnScroll(event: any) {
     let value = window.scrollY;
-    if (value > this.oldScrollPosition) {
+    if (
+      value < this.oldScrollPosition ||
+      value == 0 ||
+      this.oldScrollPosition == -1
+    ) {
+      this.smallHeaderDisplay = 'none';
+      this.bigHeaderDisplay = 'block';
+    } else {
       this.smallHeaderDisplay = 'block';
       this.bigHeaderDisplay = 'none';
       this.hideSettings();
-    } else {
-      this.smallHeaderDisplay = 'none';
-      this.bigHeaderDisplay = 'block';
     }
     this.oldScrollPosition = value;
   }
