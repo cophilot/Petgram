@@ -15,6 +15,8 @@ export class AppComponent {
 
   isCatMode: boolean = true;
 
+  oldScrollPosition: number = 0;
+
   posts = shuffle([
     /*
     {
@@ -69,7 +71,7 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event'])
   OnScroll(event: any) {
     let value = window.scrollY;
-    if (value > 0) {
+    if (value > this.oldScrollPosition) {
       this.smallHeaderDisplay = 'block';
       this.bigHeaderDisplay = 'none';
       this.hideSettings();
@@ -77,6 +79,7 @@ export class AppComponent {
       this.smallHeaderDisplay = 'none';
       this.bigHeaderDisplay = 'block';
     }
+    this.oldScrollPosition = value;
   }
 
   setAnimalMode($event: any) {

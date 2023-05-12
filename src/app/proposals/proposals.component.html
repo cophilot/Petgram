@@ -1,8 +1,16 @@
-<div class="profile-row">
+<div class="profile-row" (click)="openBig()">
   <img src="{{ img }}" />
   <div>
     <b class="name">{{ name }}</b>
     <br />
     <span class="description">{{ description }}</span>
+
+    <app-proposal-big
+      [style.display]="bigVisible ? 'block' : 'none'"
+      (closeEmitter)="closeBig()"
+      [description]="this.description"
+      [name]="this.name"
+      [img]="this.img"
+    ></app-proposal-big>
   </div>
 </div>
