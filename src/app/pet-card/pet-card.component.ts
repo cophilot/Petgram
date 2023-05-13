@@ -44,12 +44,17 @@ export class PetCardComponent {
       this.hugButtonText = 'Hug';
     } else {
       this.bigHeart.nativeElement.style.display = 'block';
+      this.bigHeart.nativeElement.classList.add('show');
       this.hugButtonText = 'Unhug';
       setTimeout(() => {
         this.heart.nativeElement.style.display = 'block';
-        this.bigHeart.nativeElement.style.display = 'none';
-        this.bigHeart.nativeElement.style.opacity = '100%';
-      }, 2000);
+        //this.bigHeart.nativeElement.style.opacity = '100%';
+        this.bigHeart.nativeElement.classList.remove('show');
+        this.bigHeart.nativeElement.classList.add('hidden');
+        setTimeout(() => {
+          this.bigHeart.nativeElement.style.display = 'none';
+        }, 500);
+      }, 1500);
     }
     this.hugged = !this.hugged;
   }

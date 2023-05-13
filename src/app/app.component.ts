@@ -17,6 +17,8 @@ export class AppComponent {
 
   oldScrollPosition: number = -1;
 
+  foo: boolean = false;
+
   posts = shuffle([
     /*
     {
@@ -58,6 +60,12 @@ export class AppComponent {
   constructor(private elementRef: ElementRef) {}
 
   ngOnInit() {
+    this.isCatMode =
+      window.location.href.includes('dog') ||
+      window.location.href.includes('Dog') ||
+      window.location.href.includes('DOG')
+        ? false
+        : true;
     this.loadMore();
   }
 

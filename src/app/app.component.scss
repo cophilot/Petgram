@@ -5,8 +5,8 @@
     max-width: 400px;
     padding: 10px 0;
     app-pet-card {
-            border: 5px solid rgba(0, 0, 0, 0.001);
-        }
+        border: 5px solid rgba(0, 0, 0, 0.001);
+    }
 }
 
 .flexrow{
@@ -15,6 +15,7 @@
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 150px;
+    left:0px;
     
 }
 .profile-suggestions{
@@ -38,6 +39,21 @@
     z-index: -100;
 }
 
+.byText{
+    position: fixed;
+    font-size: 15px;
+    border: none;
+    align-items: center;
+    bottom:10px;
+    right: 20px;
+    color: var(--text-color);
+    opacity: 0.3;
+    a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
 // rearrange the order of the elements if the screen is too small
 @media screen and (max-width: 600px) {
     .flexrow{
@@ -57,6 +73,12 @@
         transform: rotate(-20deg);
         opacity: 0.1;
         z-index: -100;
+    }
+    .byText{
+        //position in middle of screen
+        position: relative;
+        width:100%;
+        text-align: center;
     }
 }
 

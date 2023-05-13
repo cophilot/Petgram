@@ -3,6 +3,9 @@
     position: fixed;
     right:0px;
     top:100px;
+    animation-name: slideInFromRight;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
     button{
         background-color: var(--color);
         font-size: 20px;
@@ -30,5 +33,22 @@
     .settings{
         width: 100%;
         top:95px;
+    }
+}
+
+@keyframes slideInFromTop{
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }

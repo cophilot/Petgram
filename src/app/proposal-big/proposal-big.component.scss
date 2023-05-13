@@ -69,5 +69,17 @@
             margin-left: -100px;
             top: 50px;
         }
+        animation-name: slideInFromBottom;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

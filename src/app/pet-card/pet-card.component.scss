@@ -1,82 +1,110 @@
-.card{
-    background-color: var(--color);
-    width: 400px;
-    border:1px solid rgba(0,0,0,0.3);
+.card {
+  background-color: var(--color);
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-color);
+  img {
+    width: 100%;
+  }
+  p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: var(--text-color);
+  }
+
+  .heart {
+    position: absolute;
+    top: 340px;
+    left: 340px;
+    width: 40px;
+    height: 40px;
+    display: none;
+  }
+  .bigHeart {
+    position: absolute;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    display: none;
+/*     animation-name: fadeInAnimation;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+ */  }
+  .interactButton {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 50px;
+    background-color: #e99469;
+    color: white;
+    font-size: 20px;
+    border: none;
     border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    color:var(--text-color);
-    img{
-        width: 100%;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffb472;
+      opacity: 0.8;
+      color: #e99469;
     }
-    p{
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 20px;
-        color: var(--text-color);
-    }
-    
-    .heart{
-        position: absolute;
-        top: 340px;
-        left: 340px;
-        width: 40px;
-        height: 40px;
-        display: none;
-    }
-    .bigHeart{
-        position: absolute;
-        top:0px;
-        width: 250px;
-        height: 250px;
-        display: none;
-        animation-name: myAnimation;
-        animation-duration: 800ms;
-        animation-fill-mode: forwards;
-    }
-    .interactButton {
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 15px;
-        width: 300px;
-        height: 50px;
-        background-color: #e99469;
-        color: white;
-        font-size: 20px;
-        border: none;
-        border-radius: 5px;
-        align-items: center;
-        cursor: pointer;
-    
-        &:hover {
-            background-color: #ffb472;
-            opacity: 0.8;
-            color: #e99469;
-        }
-    }
-    
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .card {
-        button{
-            margin-left: 0px;
-            margin-right: 0px;
-            width: 100%;
-        }
+  .card {
+    button {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100%;
     }
+  }
 }
 
-@keyframes myAnimation {
-    0% {
-        transform: rotateX(360deg);
-    }
+@keyframes rotateAnimation {
+  0% {
+    transform: rotateX(360deg);
+  }
 
-    50% {
-        transform: rotateX(0deg);
-    }
+  50% {
+    transform: rotateX(0deg);
+  }
 
-    100% {
-        transform: rotateY(360deg);
-    }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+    animation-name: fadeOutAnimation;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.show {
+    animation-name: fadeInAnimation;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
