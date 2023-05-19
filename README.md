@@ -21,10 +21,10 @@
    <a href="https://github.com/phil1436/Petgram/commits/master">
        <img src="https://img.shields.io/github/last-commit/phil1436/Petgram" alt="last commit" />
    </a>
-   <a href="https://phil1436.github.io/Petgram/Cats">
+   <a href="https://petgram.philipp-bonin.com/Cats">
        <img src="https://img.shields.io/badge/%F0%9F%90%B1-Cats-yellow" alt="Cats" />
    </a>
-   <a href="https://phil1436.github.io/Petgram/Dogs">
+   <a href="https://petgram.philipp-bonin.com/Dogs">
        <img src="https://img.shields.io/badge/%F0%9F%90%B6-Dogs-yellow" alt="Dogs" />
    </a>
 </div>
@@ -64,3 +64,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 _This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6._
 
 by [Philipp B.](https://github.com/phil1436)
+
+<!-- ng deploy --base-href=https://petgram.philipp-bonin.com --cname=petgram.philipp-bonin.com -->
