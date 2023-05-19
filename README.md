@@ -1,8 +1,35 @@
-<img src = "src/assets/img/logo.png" title = "logo" width ="50%"/>
+<div align="center">
+  <br />
+  <img src="src/assets/img/logo.png" alt="PetgramLogo" width="40%"/>
+  <h1>Petgram</h1>
+  <p>
+    Just a social media platform for pets. You can upload your pets and share them with the world. You can also like and comment on other peoples pets. 🐰🐰🐰
+  </p>
+</div>
 
-# Petgram
+<!-- Badges -->
+<div align="center">
+    <a href="https://phil1436.github.io/Petgram">
+        <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fphil1436.github.io%2FPetgram%2F" alt="website">
+    </a>
+   <a href="https://github.com/phil1436/Petgram/blob/master/LICENSE">
+       <img src="https://img.shields.io/github/license/phil1436/Petgram" alt="license" />
+   </a>
+   <a href="https://github.com/phil1436/Petgram/stargazers">
+       <img src="https://img.shields.io/github/stars/phil1436/Petgram" alt="stars" />
+   </a>
+   <a href="https://github.com/phil1436/Petgram/commits/master">
+       <img src="https://img.shields.io/github/last-commit/phil1436/Petgram" alt="last commit" />
+   </a>
+   <a href="https://phil1436.github.io/Petgram/Cats">
+       <img src="https://img.shields.io/badge/%F0%9F%90%B1-Cats-yellow" alt="Cats" />
+   </a>
+   <a href="https://phil1436.github.io/Petgram/Dogs">
+       <img src="https://img.shields.io/badge/%F0%9F%90%B6-Dogs-yellow" alt="Dogs" />
+   </a>
+</div>
 
-Just a social media platform for pets. You can upload your pets and share them with the world. You can also like and comment on other peoples pets. 🐰🐰🐰
+---
 
 View the application [here](https://phil1436.github.io/Petgram/).
 
