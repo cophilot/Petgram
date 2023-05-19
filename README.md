@@ -9,8 +9,8 @@
 
 <!-- Badges -->
 <div align="center">
-    <a href="https://phil1436.github.io/Petgram">
-        <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fphil1436.github.io%2FPetgram%2F" alt="website">
+    <a href="https://petgram.philipp-bonin.com/">
+        <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fpetgram.philipp-bonin.com%2F" alt="website">
     </a>
    <a href="https://github.com/phil1436/Petgram/blob/master/LICENSE">
        <img src="https://img.shields.io/github/license/phil1436/Petgram" alt="license" />
@@ -31,7 +31,7 @@
 
 ---
 
-View the application [here](https://phil1436.github.io/Petgram/).
+View the application [here](https://petgram.philipp-bonin.com/).
 
 ---
 
