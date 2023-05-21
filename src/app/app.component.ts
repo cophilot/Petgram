@@ -8,6 +8,8 @@ import { HostListener, Component, ViewChild, ElementRef } from '@angular/core';
 export class AppComponent {
   title = 'Petgram';
 
+  public static IS_CAT_MODE = true;
+
   settingsVisible: boolean = false;
 
   smallHeaderDisplay: string = 'none';
@@ -40,7 +42,7 @@ export class AppComponent {
   ]);
 
   proposals = shuffle([
-    {
+    /* {
       img: 'assets/pets/3.jpg',
       name: 'Mr. Kaninchen',
       description: 'Warning: I am a bad boy!😎',
@@ -54,7 +56,7 @@ export class AppComponent {
       img: 'assets/pets/6.jpg',
       name: 'Zibi',
       description: 'Am I black with white strips or white with black strips?',
-    },
+    }, */
   ]);
 
   constructor(private elementRef: ElementRef) {}
@@ -66,6 +68,7 @@ export class AppComponent {
       window.location.href.includes('DOG')
         ? false
         : true;
+    AppComponent.IS_CAT_MODE = this.isCatMode;
     this.loadMore();
   }
 

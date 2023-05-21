@@ -28,6 +28,9 @@
         border: 5px solid #e89468;
         object-fit: cover;
         object-position: right;
+        &:hover{
+            transform: scale(1.2)
+        }
     }
     .name{
         position: absolute;
@@ -61,7 +64,8 @@
             font-size: 30px;
             top: 350px;
             text-align: center;
-            width: 100%;
+            width: 90%;
+            transform: translateX(5%);
             left: 0px;
         }
         .profilePicture{

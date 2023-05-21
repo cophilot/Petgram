@@ -6,6 +6,7 @@
     animation-name: slideInFromRight;
     animation-duration: 400ms;
     animation-fill-mode: forwards;
+    z-index: 1000;
     button{
         background-color: var(--color);
         font-size: 20px;
@@ -33,6 +34,7 @@
     .settings{
         width: 100%;
         top:95px;
+        animation-name: slideInFromTop;
     }
 }
 

@@ -2,23 +2,12 @@
 body{
     margin: 0;
     background-color: var(--bg-color);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family:  verdana, sans-serif;
 }
 
 p{
     color: var(--text-color)
 }
-
-/* @media (prefers-color-scheme: dark) {
-
-    p {
-        color: white;
-    }
-
-    body {
-        background-color: #1a1a2b;
-    }
-} */
 
 [data-theme="light"]{
     --text-color:black;

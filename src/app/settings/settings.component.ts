@@ -3,8 +3,9 @@ import {
   Output,
   EventEmitter,
   ElementRef,
-  ViewChild,
+  Input,
 } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-settings',
@@ -13,13 +14,19 @@ import {
 })
 export class SettingsComponent {
   colorScheme: string = this.detectPrefersColorScheme();
-  animalMode: string = '🐶';
+  @Input() animalMode: string = '🐶';
 
   @Output() animalModeEmitter = new EventEmitter<string>();
   @Output() displayEmitter = new EventEmitter<string>();
 
   constructor(private elementRef: ElementRef) {
     this.setColorScheme();
+  }
+
+  ngOnInit(): void {
+    if (!AppComponent.IS_CAT_MODE) {
+      this.animalMode = '🐱';
+    }
   }
 
   detectPrefersColorScheme(): string {
