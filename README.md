@@ -12,14 +12,14 @@
     <a href="https://petgram.philipp-bonin.com/">
         <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fpetgram.philipp-bonin.com%2F" alt="website">
     </a>
-   <a href="https://github.com/phil1436/Petgram/blob/master/LICENSE">
-       <img src="https://img.shields.io/github/license/phil1436/Petgram" alt="license" />
+   <a href="https://github.com/cophilot/Petgram/blob/master/LICENSE">
+       <img src="https://img.shields.io/github/license/cophilot/Petgram" alt="license" />
    </a>
-   <a href="https://github.com/phil1436/Petgram/stargazers">
-       <img src="https://img.shields.io/github/stars/phil1436/Petgram" alt="stars" />
+   <a href="https://github.com/cophilot/Petgram/stargazers">
+       <img src="https://img.shields.io/github/stars/cophilot/Petgram" alt="stars" />
    </a>
-   <a href="https://github.com/phil1436/Petgram/commits/master">
-       <img src="https://img.shields.io/github/last-commit/phil1436/Petgram" alt="last commit" />
+   <a href="https://github.com/cophilot/Petgram/commits/master">
+       <img src="https://img.shields.io/github/last-commit/cophilot/Petgram" alt="last commit" />
    </a>
    <a href="https://petgram.philipp-bonin.com/Cats">
        <img src="https://img.shields.io/badge/%F0%9F%90%B1-Cats-yellow" alt="Cats" />
@@ -63,6 +63,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 _This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6._
 
-by [Philipp B.](https://github.com/phil1436)
+by [Philipp B.](https://github.com/cophilot)
 
 <!-- ng deploy --base-href=https://petgram.philipp-bonin.com --cname=petgram.philipp-bonin.com -->
